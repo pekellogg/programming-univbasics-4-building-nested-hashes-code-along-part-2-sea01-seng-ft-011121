@@ -1,6 +1,6 @@
 def update_status
    epic_tragedy = {
-      montague: => {
+      :montague => {
          :patriarch => {name: "Lord Montague", age: "53"},
          :matriarch => {name: "Lady Montague", age: "54"},
          :hero => {name: "Romeo", age: "15", status: "alive"},
@@ -23,7 +23,7 @@ def update_status
       ]
    }
 
-   epic_tragedy[montague:][:hero][:status] = "dead"
+   epic_tragedy[:montague][:hero][:status] = "dead"
    epic_tragedy[:capulet][:heroine][:status] = "dead"
 
   # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
